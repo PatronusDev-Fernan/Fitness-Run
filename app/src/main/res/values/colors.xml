@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="fitnessrun_primary">#F97316</color>
+    <color name="fitnessrun_primary_dark">#C2410C</color>
+    <color name="fitnessrun_green">#22C55E</color>
+    <color name="fitnessrun_green_dark">#15803D</color>
+    <color name="fitnessrun_green_soft">#DCFCE7</color>
+    <color name="fitnessrun_background">#F7FAF7</color>
+    <color name="fitnessrun_text_primary">#1F2937</color>
+    <color name="fitnessrun_text_secondary">#6B7280</color>
+    <color name="fitnessrun_border">#D1D5DB</color>
+</resources>

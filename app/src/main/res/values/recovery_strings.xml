@@ -1,0 +1,4 @@
+<resources>
+    <string name="cloud_read_timeout">La consulta tardó demasiado. Revisa tu conexión y vuelve a intentarlo. También puedes entrar como invitado desde el inicio.</string>
+    <string name="cloud_retry">Reintentar</string>
+</resources>

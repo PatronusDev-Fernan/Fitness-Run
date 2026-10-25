@@ -1,0 +1,29 @@
+<resources>
+    <string name="food_catalog_title">Más alimentos para elegir</string>
+    <string name="food_catalog_notice">Opciones del catálogo tras aplicar tus exclusiones. Tus favoritos aparecen primero. Revisa ingredientes, etiquetas y preparación; esta lista no evalúa condiciones médicas.</string>
+    <string name="food_excluded_title">Alimentos excluidos de tus opciones</string>
+    <string name="food_review_title">Datos que requieren revisión</string>
+    <string name="food_no_options">No hay opciones en esta categoría con tus exclusiones actuales.</string>
+    <string name="food_filter_count">%1$d alimentos disponibles · %2$d excluidos según tu registro</string>
+    <string name="food_filter_review">Revisa estas restricciones: %1$s. Las opciones visibles no garantizan que sean compatibles.</string>
+    <string name="food_other_title">Proteínas, cereales, lácteos y semillas</string>
+    <string name="food_other_action">+ Explorar otros alimentos</string>
+    <string name="coach_title">Perfil del coach</string>
+    <string name="coach_name">Tu próximo coach</string>
+    <string name="coach_badge">ACOMPAÑAMIENTO</string>
+    <string name="coach_intro">Consulta tus recursos de actividad y alimentación mientras se habilita el acompañamiento profesional.</string>
+    <string name="coach_about_title">Sobre este perfil</string>
+    <string name="coach_about">Aún no tienes un coach asignado. Aquí encontrarás su información cuando el servicio esté disponible.</string>
+    <string name="coach_topics_title">Áreas de acompañamiento</string>
+    <string name="coach_topics">• Organización de la semana\n• Registro de actividad\n• Seguimiento de hábitos\n• Recuperación y constancia</string>
+    <string name="coach_resources_title">Recursos de FitnessRun</string>
+    <string name="coach_videos">Ver videos de actividad</string>
+    <string name="coach_routines">Consultar mi plan semanal</string>
+    <string name="coach_food">Consultar mis opciones de alimentos</string>
+    <string name="coach_follow">Guardar acceso</string>
+    <string name="coach_unfollow">Quitar acceso</string>
+    <string name="coach_following">Acceso guardado durante esta sesión.</string>
+    <string name="coach_not_following">Guarda este espacio durante tu sesión.</string>
+    <string name="coach_contact_notice">Mensajería, citas y revisión profesional aún no están disponibles. Tus datos de salud no se comparten con este perfil.</string>
+</resources>
+

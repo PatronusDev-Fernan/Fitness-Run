@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" xmlns:tools="http://schemas.android.com/tools" android:id="@+id/main" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fitnessrun_background" tools:context=".MainActivity">
+    <androidx.core.widget.NestedScrollView android:layout_width="0dp" android:layout_height="0dp" android:clipToPadding="false" android:fillViewport="true" android:paddingBottom="20dp" app:layout_constraintBottom_toTopOf="@id/bottomNavigation" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:layout_constraintTop_toTopOf="parent">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:paddingStart="20dp" android:paddingTop="18dp" android:paddingEnd="20dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                <ImageView android:layout_width="52dp" android:layout_height="52dp" android:layout_marginEnd="12dp" android:contentDescription="@string/login_logo_description" android:src="@drawable/fitnessrun_logo" />
+                <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:orientation="vertical">
+                    <TextView android:id="@+id/greetingText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_greeting" android:textColor="@color/fitnessrun_text_primary" android:textSize="26sp" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="2dp" android:text="@string/community_motto" android:textColor="@color/fitnessrun_text_secondary" android:textSize="14sp" />
+                </LinearLayout>
+                <com.google.android.material.button.MaterialButton android:id="@+id/notificationsButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="48dp" android:layout_height="48dp" android:minWidth="0dp" android:contentDescription="@string/community_notifications" android:insetLeft="0dp" android:insetRight="0dp" android:text="!" android:textColor="@color/fitnessrun_primary" android:textSize="18sp" android:textStyle="bold" app:strokeColor="@color/fitnessrun_border" />
+            </LinearLayout>
+            <com.google.android.material.textfield.TextInputLayout style="@style/Widget.Material3.TextInputLayout.OutlinedBox.Dense" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="@string/community_search" app:boxBackgroundColor="@color/white" app:boxCornerRadiusBottomEnd="16dp" app:boxCornerRadiusBottomStart="16dp" app:boxCornerRadiusTopEnd="16dp" app:boxCornerRadiusTopStart="16dp">
+                <com.google.android.material.textfield.TextInputEditText android:id="@+id/searchEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:imeOptions="actionSearch" android:inputType="text" android:maxLines="1" />
+            </com.google.android.material.textfield.TextInputLayout>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="18dp" app:cardElevation="1dp" app:strokeColor="@color/fitnessrun_border" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_share_prompt" android:textColor="@color/fitnessrun_text_primary" android:textSize="16sp" android:textStyle="bold" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:orientation="horizontal">
+                        <com.google.android.material.button.MaterialButton android:id="@+id/photoButton" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/community_photo" />
+                        <com.google.android.material.button.MaterialButton android:id="@+id/videoButton" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginHorizontal="8dp" android:layout_weight="1" android:text="@string/community_video" />
+                        <com.google.android.material.button.MaterialButton android:id="@+id/progressButton" style="@style/Widget.Material3.Button.TonalButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/community_progress" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:id="@+id/userPostCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:visibility="gone" app:cardBackgroundColor="@color/white" app:cardCornerRadius="18dp" app:strokeColor="@color/fitnessrun_green" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                        <TextView android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/bg_avatar_orange" android:gravity="center" android:text="FP" android:textColor="@color/white" android:textStyle="bold" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Fernando Pantoja" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Ahora · Comunidad" android:textColor="@color/fitnessrun_text_secondary" android:textSize="12sp" />
+                        </LinearLayout>
+                    </LinearLayout>
+                    <TextView android:id="@+id/userPostText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:textColor="@color/fitnessrun_text_primary" android:textSize="16sp" />
+                    <TextView android:id="@+id/userProgressText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:background="@drawable/bg_badge_green" android:padding="14dp" android:textColor="@color/fitnessrun_green_dark" android:textStyle="bold" android:visibility="gone" />
+                    <ImageView android:id="@+id/userPostImage" android:layout_width="match_parent" android:layout_height="230dp" android:layout_marginTop="12dp" android:contentDescription="Fotografía de la publicación" android:scaleType="centerCrop" android:visibility="gone" />
+                    <VideoView android:id="@+id/userPostVideo" android:layout_width="match_parent" android:layout_height="230dp" android:layout_marginTop="12dp" android:background="@color/black" android:visibility="gone" />
+                    <TextView android:id="@+id/videoHintText" android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center" android:padding="8dp" android:text="Toca el video para reproducir o pausar" android:textColor="@color/fitnessrun_text_secondary" android:textSize="12sp" android:visibility="gone" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/community_for_you" android:textColor="@color/fitnessrun_text_primary" android:textSize="20sp" android:textStyle="bold" />
+            <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/demo_banner" android:textColor="@color/fitnessrun_green_dark" />
+            <LinearLayout android:id="@+id/localPostsContainer" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" />
+            <TextView android:id="@+id/noResultsText" android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/demo_no_results" android:visibility="gone" />
+            <com.google.android.material.card.MaterialCardView android:id="@+id/samplePostCard" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" app:cardBackgroundColor="@color/white" app:cardCornerRadius="18dp" app:cardElevation="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+                        <TextView android:layout_width="42dp" android:layout_height="42dp" android:background="@drawable/bg_avatar_orange" android:gravity="center" android:text="FR" android:textColor="@color/white" android:textStyle="bold" />
+                        <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_user_name" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+                            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_user_meta" android:textColor="@color/fitnessrun_text_secondary" android:textSize="12sp" />
+                        </LinearLayout>
+                        <com.google.android.material.button.MaterialButton android:id="@+id/followButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_follow" android:textColor="@color/fitnessrun_primary" />
+                    </LinearLayout>
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:text="@string/community_post_text" android:textColor="@color/fitnessrun_text_primary" android:textSize="16sp" />
+                    <TextView android:layout_width="match_parent" android:layout_height="150dp" android:layout_marginTop="12dp" android:background="@drawable/bg_post_placeholder" android:gravity="center" android:text="@string/community_post_placeholder" android:textColor="@color/fitnessrun_green_dark" android:textSize="18sp" android:textStyle="bold" />
+                    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+                        <com.google.android.material.button.MaterialButton android:id="@+id/supportButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/community_support" />
+                        <com.google.android.material.button.MaterialButton android:id="@+id/congratulateButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/community_congratulate" />
+                        <com.google.android.material.button.MaterialButton android:id="@+id/saveButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/community_save" />
+                    </LinearLayout>
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+            <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:layout_marginBottom="12dp" app:cardBackgroundColor="@color/fitnessrun_green_soft" app:cardCornerRadius="18dp" app:strokeColor="@color/fitnessrun_green" app:strokeWidth="1dp">
+                <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/community_verified_coach" android:textColor="@color/fitnessrun_green_dark" android:textStyle="bold" />
+                    <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/community_daily_tip" android:textColor="@color/fitnessrun_text_primary" android:textSize="18sp" android:textStyle="bold" />
+                    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/community_coach_tip" android:textColor="@color/fitnessrun_text_primary" android:textSize="15sp" />
+                    <com.google.android.material.button.MaterialButton android:id="@+id/viewCoachButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:text="@string/community_view_coach" android:textColor="@color/fitnessrun_green_dark" app:strokeColor="@color/fitnessrun_green_dark" />
+                </LinearLayout>
+            </com.google.android.material.card.MaterialCardView>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+    <com.google.android.material.bottomnavigation.BottomNavigationView android:id="@+id/bottomNavigation" android:layout_width="0dp" android:layout_height="wrap_content" android:background="@color/white" app:itemIconTint="@color/community_nav_color" app:itemTextColor="@color/community_nav_color" app:labelVisibilityMode="labeled" app:layout_constraintBottom_toBottomOf="parent" app:layout_constraintEnd_toEndOf="parent" app:layout_constraintStart_toStartOf="parent" app:menu="@menu/community_bottom_navigation" />
+</androidx.constraintlayout.widget.ConstraintLayout>
+
+
+

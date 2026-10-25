@@ -1,0 +1,141 @@
+<resources>
+    <string name="app_name">FitnessRun</string>
+    <string name="login_title">Iniciar sesión</string>
+    <string name="login_subtitle">Tu actividad, alimentación y progreso en un solo lugar.</string>
+    <string name="login_logo_description">Logo de Fitness Run: corredor y flecha de progreso</string>
+    <string name="login_user_hint">Correo electrónico</string>
+    <string name="login_password_hint">Contraseña</string>
+    <string name="login_forgot_password">¿Olvidaste tu contraseña?</string>
+    <string name="login_action">Iniciar sesión</string>
+    <string name="login_google_action">Continuar como invitado</string>
+    <string name="login_create_account">¿No tienes una cuenta? Crear usuario</string>
+    <string name="login_user_required">Escribe tu usuario o correo</string>
+    <string name="login_password_required">Escribe tu contraseña</string>
+    <string name="login_password_too_short">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="login_pending_auth">Los datos son válidos. El siguiente paso será conectar la autenticación segura.</string>
+    <string name="login_feature_pending">Esta función se conectará en el siguiente paso.</string>
+    <string name="register_title">Registro</string>
+    <string name="register_step">Paso 1 de 3</string>
+    <string name="register_subtitle">Datos personales</string>
+    <string name="register_name_hint">Nombre</string>
+    <string name="register_last_name_hint">Apellidos</string>
+    <string name="register_birth_date_hint">Fecha de nacimiento</string>
+    <string name="register_email_hint">Correo electrónico</string>
+    <string name="register_password_hint">Contraseña</string>
+    <string name="register_confirm_password_hint">Confirmar contraseña</string>
+    <string name="register_password_help">Usa al menos 8 caracteres</string>
+    <string name="register_accept_terms">Acepto guardar mis datos personales, de salud y alimentación en mi cuenta de FitnessRun</string>
+    <string name="register_action">Siguiente</string>
+    <string name="register_back_to_login">Atrás</string>
+    <string name="register_name_required">Escribe tu nombre</string>
+    <string name="register_last_name_required">Escribe tus apellidos</string>
+    <string name="register_birth_date_required">Selecciona tu fecha de nacimiento</string>
+    <string name="register_email_required">Escribe tu correo</string>
+    <string name="register_email_invalid">Escribe un correo válido</string>
+    <string name="register_password_required">Crea una contraseña</string>
+    <string name="register_password_too_short">La contraseña debe tener al menos 8 caracteres</string>
+    <string name="register_confirm_required">Confirma tu contraseña</string>
+    <string name="register_password_mismatch">Las contraseñas no coinciden</string>
+    <string name="register_terms_required">Confirma que aceptas guardar tus datos en tu cuenta</string>
+    <string name="register_pending_auth">Los datos son válidos. Falta conectar el registro seguro.</string>
+    <string name="health_step">Paso 2 de 3</string>
+    <string name="health_title">Salud y condición física</string>
+    <string name="health_notice">Registra tus condiciones y molestias. Esta información no sustituye una valoración profesional.</string>
+    <string name="health_height_hint">Estatura (cm)</string>
+    <string name="health_weight_hint">Peso (kg)</string>
+    <string name="health_blood_type">Tipo de sangre</string>
+    <string name="health_blood_unknown">No lo sé</string>
+    <string name="health_condition_question">¿Tienes alguna condición médica?</string>
+    <string name="health_condition_detail">Describe la condición, por ejemplo: hernia, asma o hipertensión</string>
+    <string name="health_injury_question">¿Has tenido fracturas o lesiones?</string>
+    <string name="health_injury_detail">¿Cuáles y en qué parte del cuerpo?</string>
+    <string name="health_allergy_question">¿Tienes alergias?</string>
+    <string name="health_allergy_detail">¿A qué eres alérgico?</string>
+    <string name="health_pain_question">¿Tienes dolor o molestias al hacer ejercicio?</string>
+    <string name="health_pain_detail">Indica la zona y describe la molestia</string>
+    <string name="answer_yes">Sí</string>
+    <string name="answer_no">No</string>
+    <string name="action_back">Atrás</string>
+    <string name="action_next">Siguiente</string>
+    <string name="health_height_required">Escribe tu estatura</string>
+    <string name="health_height_invalid">La estatura debe estar entre 80 y 250 cm</string>
+    <string name="health_weight_required">Escribe tu peso</string>
+    <string name="health_weight_invalid">El peso debe estar entre 25 y 350 kg</string>
+    <string name="health_answer_required">Selecciona Sí o No</string>
+    <string name="health_detail_required">Describe esta información</string>
+    <string name="food_step">Paso 3 de 3</string>
+    <string name="food_title">Preferencias alimentarias</string>
+    <string name="food_subtitle">Elige tus preferencias e indica qué alimentos quieres excluir. Podrás revisar las opciones filtradas en Alimentación.</string>
+    <string name="food_vegetables">Verduras que consumes o aceptarías incluir</string>
+    <string name="food_select_vegetables">+ Seleccionar verduras</string>
+    <string name="food_fruits">Frutas que consumes o aceptarías incluir</string>
+    <string name="food_select_fruits">+ Seleccionar frutas</string>
+    <string name="food_favorites_hint">Comidas favoritas</string>
+    <string name="food_dislikes_hint">Alimentos que no te gustan</string>
+    <string name="food_restrictions_hint">Alimentos que no puedes consumir</string>
+    <string name="food_diet_type">Tipo de alimentación</string>
+    <string name="food_goal">Objetivo alimenticio</string>
+    <string name="food_finish">Revisar datos</string>
+    <string name="food_selection_required">Selecciona al menos una opción</string>
+    <string name="food_registration_ready">Registro completo. El siguiente paso será guardarlo de forma segura.</string>
+    <string name="dialog_accept">Aceptar</string>
+    <string name="dialog_cancel">Cancelar</string>
+    <string name="summary_title">Revisa tus datos</string>
+    <string name="summary_subtitle">Comprueba tus datos antes de crear la cuenta. Puedes volver para corregirlos.</string>
+    <string name="summary_personal">Datos personales</string>
+    <string name="summary_health">Salud y condición física</string>
+    <string name="summary_food">Preferencias alimentarias</string>
+    <string name="summary_name">Nombre: %1$s</string>
+    <string name="summary_birth_date">Fecha de nacimiento: %1$s</string>
+    <string name="summary_email">Correo: %1$s</string>
+    <string name="summary_measurements">Estatura: %1$s cm   •   Peso: %2$s kg</string>
+    <string name="summary_blood">Tipo de sangre: %1$s</string>
+    <string name="summary_condition">Condición médica: %1$s</string>
+    <string name="summary_injury">Lesiones o fracturas: %1$s</string>
+    <string name="summary_allergy">Alergias: %1$s</string>
+    <string name="summary_pain">Molestias al hacer ejercicio: %1$s</string>
+    <string name="summary_vegetables">Verduras: %1$s</string>
+    <string name="summary_fruits">Frutas: %1$s</string>
+    <string name="summary_favorites">Comidas favoritas: %1$s</string>
+    <string name="summary_dislikes">No le gustan: %1$s</string>
+    <string name="summary_restrictions">No puede consumir: %1$s</string>
+    <string name="summary_diet">Alimentación: %1$s</string>
+    <string name="summary_goal">Objetivo: %1$s</string>
+    <string name="summary_none">Ninguna</string>
+    <string name="summary_not_provided">Sin especificar</string>
+    <string name="summary_confirm">Confirmar registro</string>
+    <string name="summary_pending_save">La revisión terminó. Conectaremos el guardado seguro en el siguiente paso.</string>
+    <string name="community_greeting">¡Hola! Bienvenido</string>
+    <string name="community_greeting_named">¡Hola, %1$s!</string>
+    <string name="profile_empty_name">Tu perfil</string>
+    <string name="profile_registered_data">Tus datos de registro</string>
+    <string name="profile_local_notice">Estás como invitado. Los cambios duran hasta que salgas o se cierre la aplicación.</string>
+    <string name="community_motto">Entrenamos juntos, avanzamos juntos</string>
+    <string name="community_notifications">Notificaciones</string>
+    <string name="community_search">Buscar publicaciones o autores</string>
+    <string name="community_share_prompt">¿Qué quieres compartir hoy?</string>
+    <string name="community_photo">Foto</string><string name="community_video">Video</string><string name="community_progress">Avance</string>
+    <string name="community_for_you">Para ti</string><string name="community_user_name">FitnessRun</string><string name="community_user_meta">Bienvenida</string>
+    <string name="community_follow">Seguir</string><string name="community_following">Siguiendo</string>
+    <string name="community_post_text">Empieza registrando una actividad o revisando tus opciones de alimentación. Cada paso cuenta.</string>
+    <string name="community_post_placeholder">Tu próximo paso empieza hoy</string>
+    <string name="community_support">💪 Me motiva</string><string name="community_supported">💪 Motivación guardada</string><string name="community_congratulate">👏 Felicidades</string>
+    <string name="community_save">Guardar</string><string name="community_saved">Guardado</string>
+    <string name="community_verified_coach">Tu espacio de acompañamiento</string><string name="community_daily_tip">Consejo del día</string>
+    <string name="community_coach_tip">Si vas comenzando, no necesitas entrenar todos los días. La recuperación también forma parte de tu progreso.</string>
+    <string name="community_view_coach">Ver espacio del coach</string><string name="community_feature_pending">Esta sección estará disponible próximamente.</string>
+    <string name="community_post_action">Preparando una publicación de %1$s.</string><string name="community_search_action">Buscando “%1$s”…</string>
+    <string name="nav_community">Comunidad</string><string name="nav_routine">Rutina</string><string name="nav_food">Alimentación</string><string name="nav_achievements">Logros</string><string name="nav_profile">Perfil</string>
+    <string-array name="blood_types">
+        <item>No lo sé</item><item>A+</item><item>A-</item><item>B+</item><item>B-</item><item>AB+</item><item>AB-</item><item>O+</item><item>O-</item>
+    </string-array>
+    <string-array name="diet_types">
+        <item>Ninguna en particular</item><item>Vegetariana</item><item>Vegana</item><item>Otra</item>
+    </string-array>
+    <string-array name="food_goals">
+        <item>Bajar de peso</item><item>Mantener el peso</item><item>Aumentar masa muscular</item><item>Mejorar hábitos</item>
+    </string-array>
+</resources>
+
+
+

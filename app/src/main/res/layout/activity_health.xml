@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/healthRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitnessrun_background"
+    android:fillViewport="true"
+    tools:context=".HealthActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_vertical"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="48dp"
+                android:layout_height="48dp"
+                android:layout_marginEnd="10dp"
+                android:contentDescription="@string/login_logo_description"
+                android:src="@drawable/fitnessrun_logo" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="@string/register_title"
+                android:textColor="@color/fitnessrun_text_primary"
+                android:textSize="32sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/health_step"
+                android:textColor="@color/fitnessrun_green_dark"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:max="3"
+            android:progress="2"
+            app:indicatorColor="@color/fitnessrun_primary"
+            app:trackColor="@color/fitnessrun_green_soft"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="8dp" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="24dp"
+            android:text="@string/health_title"
+            android:textColor="@color/fitnessrun_text_primary"
+            android:textSize="22sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:background="@color/fitnessrun_green_soft"
+            android:padding="14dp"
+            android:text="@string/health_notice"
+            android:textColor="@color/fitnessrun_green_dark"
+            android:textSize="14sp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/heightInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="7dp"
+                android:layout_weight="1"
+                android:hint="@string/health_height_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/heightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textColor="@color/fitnessrun_text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:id="@+id/weightInputLayout"
+                style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="7dp"
+                android:layout_weight="1"
+                android:hint="@string/health_weight_hint">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    android:id="@+id/weightEditText"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:inputType="numberDecimal"
+                    android:maxLines="1"
+                    android:textColor="@color/fitnessrun_text_primary" />
+            </com.google.android.material.textfield.TextInputLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/bloodTypeInputLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="14dp"
+            android:hint="@string/health_blood_type">
+
+            <AutoCompleteTextView
+                android:id="@+id/bloodTypeDropdown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="none"
+                android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="22dp"
+            android:text="@string/health_condition_question"
+            android:textColor="@color/fitnessrun_text_primary"
+            android:textStyle="bold" />
+
+        <RadioGroup
+            android:id="@+id/conditionRadioGroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+            <RadioButton android:id="@+id/conditionYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_yes" />
+            <RadioButton android:id="@+id/conditionNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_no" />
+        </RadioGroup>
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/conditionDetailLayout"
+            style="@style/Widget.Material3.TextInputLayout.OutlinedBox"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="@string/health_condition_detail"
+            android:visibility="gone">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/conditionDetailEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/health_injury_question" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/injuryRadioGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/injuryYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_yes" />
+            <RadioButton android:id="@+id/injuryNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_no" />
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/injuryDetailLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/health_injury_detail" android:visibility="gone">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/injuryDetailEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/health_allergy_question" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/allergyRadioGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/allergyYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_yes" />
+            <RadioButton android:id="@+id/allergyNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_no" />
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/allergyDetailLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/health_allergy_detail" android:visibility="gone">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/allergyDetailEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/health_pain_question" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+        <RadioGroup android:id="@+id/painRadioGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="horizontal">
+            <RadioButton android:id="@+id/painYes" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_yes" />
+            <RadioButton android:id="@+id/painNo" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/answer_no" />
+        </RadioGroup>
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/painDetailLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:hint="@string/health_pain_detail" android:visibility="gone">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/painDetailEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton android:id="@+id/backButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="56dp" android:layout_marginEnd="8dp" android:layout_weight="1" android:text="@string/action_back" app:cornerRadius="16dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/nextButton" android:layout_width="0dp" android:layout_height="56dp" android:layout_marginStart="8dp" android:layout_weight="1" android:text="@string/action_next" app:backgroundTint="@color/fitnessrun_primary" app:cornerRadius="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>

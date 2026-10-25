@@ -1,0 +1,63 @@
+<resources>
+    <string name="demo_title">FitnessRun</string>
+    <string name="demo_login_help">Inicia sesión para recuperar tu perfil o continúa como invitado. El progreso y las publicaciones duran durante esta sesión.</string>
+    <string name="demo_banner">Las publicaciones duran durante esta sesión. El progreso requiere una cuenta y confirmación de guardado para conservarse.</string>
+    <string name="demo_no_results">No hay publicaciones que coincidan con tu búsqueda.</string>
+    <string name="demo_post_meta">%1$s · %2$s · Solo en este dispositivo</string>
+    <string name="demo_post_required">Escribe un mensaje antes de publicar</string>
+    <string name="demo_post_hint">Comparte tu %1$s…</string>
+    <string name="demo_post_published">Publicación añadida a esta sesión</string>
+    <string name="demo_audience">Dónde se guarda</string>
+    <string name="demo_attachment">Archivo seleccionado: %1$s</string>
+    <string name="demo_remove_attachment">Quitar archivo</string>
+    <string name="demo_view_attachment">Abrir %1$s</string>
+    <string name="demo_media_error">No se pudo abrir este archivo. Selecciona otro.</string>
+    <string name="demo_video">video</string>
+    <string name="demo_photo">foto</string>
+    <string name="demo_share_progress">En FitnessRun llevo %1$d de 2 bloques semanales completados. ¡A seguir avanzando!</string>
+    <string name="demo_congratulated">👏 Felicitado</string>
+    <string name="demo_notifications">Tu sesión: %1$d rutinas completadas, %2$d comidas marcadas y %3$d publicaciones locales.</string>
+    <string name="demo_coach">Espacio del coach</string>
+    <string name="demo_coach_bio">Aún no tienes un coach asignado. Consulta tus recursos de actividad y alimentación.</string>
+    <string name="demo_unfollow">Dejar de seguir</string>
+    <string name="demo_edit_profile">Editar perfil</string>
+    <string name="demo_logout">Salir</string>
+    <string name="demo_logout_message">Se borrarán los cambios de esta sesión y volverás al inicio.</string>
+    <string name="demo_save">Guardar cambios</string>
+    <string name="demo_fields_required">Completa nombre, apellidos y objetivo</string>
+    <string name="demo_routine_progress">%1$d de 2 bloques semanales completados</string>
+    <string name="demo_meal_progress">%1$d de 4 comidas marcadas</string>
+    <string name="demo_completed">Completado ✓</string>
+    <string name="demo_open">Abrir</string>
+    <string name="demo_routine_notice">Revisa tu plan antes de entrenar. No sustituye una valoración de salud.</string>
+    <string name="demo_food_notice">Revisa los ingredientes y las restricciones de tu registro antes de elegir alimentos.</string>
+    <string name="demo_check_exercises">Marca todos los días del bloque para completarlo.</string>
+    <string name="demo_finish_routine">Completar rutina</string>
+    <string name="demo_routine_saved">Rutina registrada en Logros</string>
+    <string name="demo_mark_meals">Selecciona las comidas completadas</string>
+    <string name="demo_back">Volver</string>
+    <string name="demo_achievements_title">Tus logros de esta sesión</string>
+    <string name="demo_achievements_hint">Completa los dos bloques semanales para conseguir la insignia de constancia.</string>
+    <string name="demo_first_step">Primer paso</string>
+    <string name="demo_first_step_hint">Completa un bloque de tu rutina</string>
+    <string name="demo_consistency">Constancia</string>
+    <string name="demo_consistency_hint">Completa los dos bloques semanales</string>
+    <string name="demo_food_badge">Registro de alimentación</string>
+    <string name="demo_food_badge_hint">Marca las cuatro comidas del día</string>
+    <string name="demo_pending">Por conseguir</string>
+    <string name="demo_view_routines">Ver rutinas</string>
+    <string name="demo_share">Compartir avance</string>
+    <string name="demo_steps_progress">%1$d de %2$d días</string>
+    <string name="demo_data_notice">Tu perfil de invitado no se guarda en una cuenta.</string>
+    <string-array name="demo_audiences"><item>Solo en este dispositivo</item></string-array>
+    <string-array name="demo_routines"><item>Pierna y movilidad</item><item>Tren superior</item><item>Actividad flexible</item></string-array>
+    <string-array name="demo_routine_legs"><item>Calentamiento</item><item>Sentadilla asistida</item><item>Puente de glúteo</item><item>Vuelta a la calma</item></string-array>
+    <string-array name="demo_routine_upper"><item>Calentamiento</item><item>Movilidad de hombros</item><item>Remo con banda</item><item>Vuelta a la calma</item></string-array>
+    <string-array name="demo_routine_flexible"><item>Elegir una actividad</item><item>Preparar el espacio</item><item>Registrar la actividad</item><item>Registrar el cierre</item></string-array>
+    <string-array name="demo_meals"><item>Desayuno · Avena, plátano y yogur</item><item>Colación · Manzana y nueces</item><item>Comida · Pollo, arroz y verduras</item><item>Cena · Tostadas de frijol con ensalada</item></string-array>
+</resources>
+
+
+
+
+

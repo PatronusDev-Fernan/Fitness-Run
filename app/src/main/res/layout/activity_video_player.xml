@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/playerRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fitnessrun_background" android:orientation="vertical">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal" android:padding="12dp">
+        <com.google.android.material.button.MaterialButton android:id="@+id/backButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="← Atrás" android:textColor="@color/fitnessrun_text_primary" />
+        <TextView android:id="@+id/titleText" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:ellipsize="end" android:maxLines="1" android:textColor="@color/fitnessrun_text_primary" android:textSize="18sp" android:textStyle="bold" />
+    </LinearLayout>
+    <ProgressBar android:id="@+id/loadingIndicator" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_gravity="center_horizontal" android:layout_margin="12dp" />
+    <WebView android:id="@+id/videoWebView" android:layout_width="match_parent" android:layout_height="0dp" android:layout_weight="1" />
+    <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:background="@color/fitnessrun_green_soft" android:padding="14dp" android:text="Realiza los movimientos a tu ritmo. Detente si sientes dolor o mareo." android:textColor="@color/fitnessrun_green_dark" android:textSize="14sp" />
+</LinearLayout>

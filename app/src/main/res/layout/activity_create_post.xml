@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto" android:id="@+id/postRoot" android:layout_width="match_parent" android:layout_height="match_parent" android:background="@color/fitnessrun_background" android:fillViewport="true">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="20dp">
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton android:id="@+id/cancelButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Cancelar" android:textColor="@color/fitnessrun_text_secondary" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:gravity="center" android:text="Crear publicación" android:textColor="@color/fitnessrun_text_primary" android:textSize="20sp" android:textStyle="bold" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/publishButton" android:layout_width="wrap_content" android:layout_height="44dp" android:text="Publicar" android:textColor="@color/white" app:backgroundTint="@color/fitnessrun_primary" />
+        </LinearLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:gravity="center_vertical" android:orientation="horizontal">
+            <TextView android:layout_width="46dp" android:layout_height="46dp" android:background="@drawable/bg_avatar_orange" android:gravity="center" android:text="FR" android:textColor="@color/white" android:textStyle="bold" />
+            <LinearLayout android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="12dp" android:layout_weight="1" android:orientation="vertical">
+                <TextView android:id="@+id/postAuthorText" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/profile_empty_name" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+                <com.google.android.material.button.MaterialButton android:id="@+id/visibilityButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="wrap_content" android:layout_height="38dp" android:layout_marginTop="3dp" android:minWidth="0dp" android:text="Comunidad ▾" android:textColor="@color/fitnessrun_green_dark" app:strokeColor="@color/fitnessrun_green" />
+            </LinearLayout>
+        </LinearLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/postInputLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="20dp" android:hint="¿Qué quieres compartir hoy?" app:boxBackgroundColor="@color/white" app:boxCornerRadiusBottomEnd="18dp" app:boxCornerRadiusBottomStart="18dp" app:boxCornerRadiusTopEnd="18dp" app:boxCornerRadiusTopStart="18dp" app:counterEnabled="true" app:counterMaxLength="500">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/postEditText" android:layout_width="match_parent" android:layout_height="180dp" android:gravity="top|start" android:inputType="textCapSentences|textMultiLine" android:maxLength="500" android:paddingTop="16dp" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <ImageView android:id="@+id/mediaImagePreview" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginTop="14dp" android:background="@drawable/bg_info_chip" android:contentDescription="Vista previa de la fotografía" android:scaleType="centerCrop" android:visibility="gone" />
+        <VideoView android:id="@+id/mediaVideoPreview" android:layout_width="match_parent" android:layout_height="210dp" android:layout_marginTop="14dp" android:background="@color/black" android:visibility="gone" />
+        <TextView android:id="@+id/progressPreview" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="14dp" android:background="@drawable/bg_badge_green" android:padding="14dp" android:textColor="@color/fitnessrun_green_dark" android:textStyle="bold" android:visibility="gone" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="22dp" android:text="Agrega a tu publicación" android:textColor="@color/fitnessrun_text_primary" android:textSize="17sp" android:textStyle="bold" />
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="10dp" android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton android:id="@+id/addPhotoButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="Foto" android:textColor="@color/fitnessrun_primary" app:strokeColor="@color/fitnessrun_border" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/addVideoButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:text="Video" android:textColor="@color/fitnessrun_primary" app:strokeColor="@color/fitnessrun_border" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/addAchievementButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="wrap_content" android:layout_marginStart="10dp" android:layout_weight="1" android:text="Avance" android:textColor="@color/fitnessrun_primary" app:strokeColor="@color/fitnessrun_border" />
+        </LinearLayout>
+
+        <TextView android:id="@+id/attachmentText" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:textColor="@color/fitnessrun_green_dark" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/removeAttachmentButton" style="@style/Widget.Material3.Button.TextButton" android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/demo_remove_attachment" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="@string/demo_banner" android:textColor="@color/fitnessrun_text_secondary" />
+        <com.google.android.material.card.MaterialCardView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" app:cardBackgroundColor="@color/fitnessrun_green_soft" app:cardCornerRadius="16dp" app:strokeColor="@color/fitnessrun_green" app:strokeWidth="1dp">
+            <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:orientation="vertical" android:padding="16dp">
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:text="Una comunidad segura y positiva" android:textColor="@color/fitnessrun_green_dark" android:textStyle="bold" />
+                <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="5dp" android:text="Evita publicar datos médicos, diagnósticos o información privada. Comparte apoyo y experiencias respetuosas." android:textColor="@color/fitnessrun_text_primary" android:textSize="14sp" />
+            </LinearLayout>
+        </com.google.android.material.card.MaterialCardView>
+    </LinearLayout>
+</ScrollView>
+

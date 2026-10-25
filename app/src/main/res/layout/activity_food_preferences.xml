@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/foodRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fitnessrun_background"
+    android:fillViewport="true"
+    tools:context=".FoodPreferencesActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp">
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:gravity="center_vertical" android:orientation="horizontal">
+            <ImageView android:layout_width="48dp" android:layout_height="48dp" android:layout_marginEnd="10dp" android:contentDescription="@string/login_logo_description" android:src="@drawable/fitnessrun_logo" />
+            <TextView android:layout_width="0dp" android:layout_height="wrap_content" android:layout_weight="1" android:text="@string/register_title" android:textColor="@color/fitnessrun_text_primary" android:textSize="32sp" android:textStyle="bold" />
+            <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="@string/food_step" android:textColor="@color/fitnessrun_green_dark" android:textStyle="bold" />
+        </LinearLayout>
+
+        <com.google.android.material.progressindicator.LinearProgressIndicator
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="12dp"
+            android:max="3"
+            android:progress="3"
+            app:indicatorColor="@color/fitnessrun_primary"
+            app:trackColor="@color/fitnessrun_green_soft"
+            app:trackCornerRadius="4dp"
+            app:trackThickness="8dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/food_title" android:textColor="@color/fitnessrun_text_primary" android:textSize="22sp" android:textStyle="bold" />
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" android:text="@string/food_subtitle" android:textColor="@color/fitnessrun_text_secondary" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:text="@string/food_vegetables" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/selectVegetablesButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/food_select_vegetables" app:strokeColor="@color/fitnessrun_green" />
+        <com.google.android.material.chip.ChipGroup android:id="@+id/vegetableChipGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" app:chipSpacingHorizontal="6dp" app:chipSpacingVertical="4dp" />
+
+        <TextView android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:text="@string/food_fruits" android:textColor="@color/fitnessrun_text_primary" android:textStyle="bold" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/selectFruitsButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="8dp" android:text="@string/food_select_fruits" app:strokeColor="@color/fitnessrun_green" />
+        <com.google.android.material.chip.ChipGroup android:id="@+id/fruitChipGroup" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="6dp" app:chipSpacingHorizontal="6dp" app:chipSpacingVertical="4dp" />
+
+        <TextView android:id="@+id/foodFilterNotice" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="16dp" android:text="@string/food_catalog_notice" android:textColor="@color/fitnessrun_text_secondary" />
+        <com.google.android.material.button.MaterialButton android:id="@+id/selectOtherFoodsButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:text="@string/food_other_action" />
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/favoritesInputLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="18dp" android:hint="@string/food_favorites_hint">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/favoritesEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/dislikesInputLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/food_dislikes_hint">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/dislikesEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/restrictionsInputLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/food_restrictions_hint">
+            <com.google.android.material.textfield.TextInputEditText android:id="@+id/restrictionsEditText" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="textCapSentences|textMultiLine" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/dietTypeInputLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/food_diet_type">
+            <AutoCompleteTextView android:id="@+id/dietTypeDropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <com.google.android.material.textfield.TextInputLayout android:id="@+id/foodGoalInputLayout" style="@style/Widget.Material3.TextInputLayout.OutlinedBox.ExposedDropdownMenu" android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="12dp" android:hint="@string/food_goal">
+            <AutoCompleteTextView android:id="@+id/foodGoalDropdown" android:layout_width="match_parent" android:layout_height="wrap_content" android:inputType="none" android:textColor="@color/fitnessrun_text_primary" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content" android:layout_marginTop="24dp" android:orientation="horizontal">
+            <com.google.android.material.button.MaterialButton android:id="@+id/backButton" style="@style/Widget.Material3.Button.OutlinedButton" android:layout_width="0dp" android:layout_height="56dp" android:layout_marginEnd="8dp" android:layout_weight="1" android:text="@string/action_back" app:cornerRadius="16dp" />
+            <com.google.android.material.button.MaterialButton android:id="@+id/finishButton" android:layout_width="0dp" android:layout_height="56dp" android:layout_marginStart="8dp" android:layout_weight="1.5" android:text="@string/food_finish" app:backgroundTint="@color/fitnessrun_primary" app:cornerRadius="16dp" />
+        </LinearLayout>
+    </LinearLayout>
+</ScrollView>
+

@@ -1,0 +1,18 @@
+<resources>
+    <string name="account_user">Usuario</string>
+    <string name="account_coach">Coach · @coach</string>
+    <string name="account_type_mismatch">Esta cuenta no corresponde al tipo seleccionado. Elige Usuario o Coach según tu registro e inténtalo de nuevo.</string>
+    <string name="register_coach_subtitle">Datos del coach · @coach</string>
+    <string name="profile_edit_title">Editar perfil</string>
+    <string name="profile_bio_hint">Descripción breve (hasta 240 caracteres)</string>
+    <string name="profile_bio_empty">Agrega una breve descripción sobre ti.</string>
+    <string name="profile_photo_description">Foto de perfil</string>
+    <string name="profile_photo_choose">Elegir foto</string>
+    <string name="profile_photo_remove">Quitar foto</string>
+    <string name="profile_photo_error">No se pudo leer la imagen. Elige otra foto.</string>
+    <string name="profile_photo_notice">Se guardará una versión reducida de la foto, sin datos de ubicación. Tus cambios se aplican al pulsar Guardar.</string>
+    <string name="profile_saved">Perfil actualizado</string>
+    <string name="profile_coach_badge">\@coach</string>
+    <string name="profile_type_notice">El tipo de cuenta identifica tu perfil; no otorga acceso a datos de otras personas.</string>
+    <string name="profile_my_coach">Mi perfil de coach</string>
+</resources>
